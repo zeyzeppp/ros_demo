@@ -1,1 +1,1 @@
-float32 batarya_durumu
+int32 batarya_durumu
