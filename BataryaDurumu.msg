@@ -1,0 +1,1 @@
+float32 batarya_durumu
