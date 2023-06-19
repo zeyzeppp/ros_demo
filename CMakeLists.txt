@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   message_generation
+  actionlib_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -64,14 +65,14 @@ FILES KonumSure.srv
 )
 
 ## Generate actions in the 'action' folder
-# add_action_files(
+add_action_files(FILES YolTamamlama.action)
 #   FILES
 #   Action1.action
 #   Action2.action
 # )
 
 ## Generate added messages and services with any dependencies listed here
-generate_messages()
+generate_messages(DEPENDENCIES actionlib_msgs)
 #   DEPENDENCIES
 #   std_msgs
 # )
