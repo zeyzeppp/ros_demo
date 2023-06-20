@@ -1,0 +1,13 @@
+<?xml version ="1.0"?>
+
+
+<launch>
+
+    <!--turtlesim node-->
+    <node pkg = "turtlesim" type = "turtlesim_node" name = "leonardo"/>
+
+    <!--kare-->
+    <node pkg = "turtlesim" type= "draw_square" name= "kare"/>
+
+
+</launch>
