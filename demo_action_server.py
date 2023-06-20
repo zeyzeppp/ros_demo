@@ -12,7 +12,7 @@ class ActionServer():
     def __init__(self):
 
         rospy.init_node("action_server_node")
-        self.a_server = actionlib.SimpleActionServer("gorev_action", YolTamamlamaAction, auto_start = True, execute_cb = self.cevap)
+        self.a_server = actionlib.SimpleActionServer("gorev_action", YolTamamlamaAction, auto_start = False, execute_cb = self.cevap)
 
         self.a_server.start()
         rospy.spin()
